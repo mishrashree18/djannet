@@ -4,20 +4,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <nav class="navbar navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand mb-3" href="#">Djannet</a>
+        <a class="navbar-brand mb-3" href="/home">Djannet</a>
 
         <form class="form-inline">
             {% csrf_token %}
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'auth_app:logout' %}">Sign Out<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item acitve">
+                    <a class="nav-link" href="#">Add a new post</a>
                 </li>
         </div>
     </div>
